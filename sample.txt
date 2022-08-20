@@ -1,5 +1,4 @@
 
-:q
 
 Hello, Welcome to Azure DevOps.
 
