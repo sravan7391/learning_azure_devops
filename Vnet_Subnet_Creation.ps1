@@ -19,7 +19,7 @@ $RGStatus = az group exists -n $RGName
 
 if ($RGStatus -eq $true)
 {
-    az network vnet create -g $RVnetName--address-prefix $VnetRange --subnet-name $SubnetName --subnet-prefix $SubnetRange -l centralindia
+    az network vnet create -n $RVnetName--address-prefix $VnetRange --subnet-name $SubnetName --subnet-prefix $SubnetRange -l centralindia
 }
 else{
     Write-Host resourcegroup $RGName already exists
